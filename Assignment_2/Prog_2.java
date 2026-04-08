@@ -5,24 +5,22 @@
 package Assignment_2;
 
 import java.util.Scanner;
-public class Prog_1 {
+public class Prog_2 {
         public static void main(String[] args){
             Scanner sc = new Scanner(System.in);
             System.out.print("Enter How Many Numbers:");
             int n = sc.nextInt();
             int arr[] = new int[n];
-            int sum =0;
-            float avg =0;
             for(int i=0;i<n;i++)
             {
-                System.out.print("Enter Numbers "+i+":");
-                arr[i] = sc.nextInt();
-                sum = sum + arr[i];               
+                System.out.print("Enter Number:");
+                arr[i]= sc.nextInt();
             }
-            avg = (float)sum / n;
-            System.out.print("\nSUM Is :"+sum);
-            System.out.print("Average Is:"+avg);
-
+            
+            for(int i=n-1;i>=0;i--)
+            {
+                   System.out.println(arr[i]);
+            }
         }    
     
 }
